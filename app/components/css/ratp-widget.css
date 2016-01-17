@@ -1,0 +1,81 @@
+.ratp_container { 
+    border: 1px solid #d6dcd8;
+    width: 25em;
+    margin-top: 1em;
+}
+.ratp_container .schedules {
+    margin: 0px 0px;
+    padding: 0px 0px;
+    list-style-type: none;
+    min-width: 0px !important;
+    width: 100% 
+}
+.ratp_container .schedules li {
+    vertical-align: middle;
+    font-family: Verdana;
+    font-size: 1.1em;
+    color: #000;
+    font-weight: bold;
+    padding: 0.2em 0em 0.2em 0.5em;
+}
+
+.ratp_container .schedules li.odd {
+    background-color: #d6dcd8;
+}
+
+.header {
+    margin: 0.5em 0em 0.8em 0em;
+}
+.header .stations {
+    vertical-align: middle;
+    font-family: Verdana;
+    font-size: 1.5em;
+    color: #009;
+    font-weight: bold;
+}
+.header .line {
+    float: left;
+    margin-right: 10px;
+}
+.header .line .type {
+    width: 60px; 
+    height: 60px;
+}
+.header .line .number {
+    position: relative;
+    right: 6px; 
+    bottom: 5px;
+}
+.refresh_btn {
+    width: 2.5em;
+    height: 2.5em;
+    position: relative;
+    left: 23.5em; 
+    bottom: 2em
+}
+
+.refresh_btn img {
+    cursor: pointer;
+    width: 2.5em;
+    height: 2.5em;
+}
+
+div.loading {
+    cursor: wait;
+    opacity: 0.6;
+}
+
+.status_bar {
+    background-color: #fccc00;
+    height: 2em;
+    font-family: Lucida Grande;
+    font-size: 0.8em;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.status_bar div {
+    position: relative;
+    top: 0.5em;
+    padding-left: 5px;
+}

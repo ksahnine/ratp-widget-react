@@ -1,0 +1,30 @@
+{
+  "name": "ratp-widget-react",
+  "version": "0.0.1",
+  "description": "Widget RATP en React",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack-dev-server --config webpack.config.js --devtool eval --progress --colors --content-base build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ratp",
+    "react"
+  ],
+  "author": "Kadda SAHNINE",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.3.26",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-runtime": "^6.3.19",
+    "css-loader": "^0.23.1",
+    "react": "^0.14.5",
+    "react-dom": "^0.14.5",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
+  }
+}
