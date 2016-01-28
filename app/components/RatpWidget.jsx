@@ -13,9 +13,9 @@ export let RatpWidget = React.createClass({
       }
     },
     componentDidMount: function() {
-      this.clickHandler();
+      this.fetchData();
     },
-    clickHandler: function() {
+    fetchData: function() {
       let schedulesUrl = `http://api-ratp.pierre-grimaud.fr/v2/metros/${this.props.line}/stations/${this.props.station}?destination=${this.props.direction}`;
       let trafficUrl = `http://api-ratp.pierre-grimaud.fr/v2/traffic/metros/${this.props.line}`;
       this.setState({loading: true, message: "Chargement en cours", schedules: []});
@@ -55,7 +55,7 @@ export let RatpWidget = React.createClass({
               </ul>
               <RatpStatusBar message={this.state.message} />
             </div>
-            <div className="refresh_btn" onClick={this.clickHandler}>
+            <div className="refresh_btn" onClick={this.fetchData}>
               <img src="http://icons.iconarchive.com/icons/graphicloads/100-flat/256/reload-icon.png" />
             </div>
           </div>
